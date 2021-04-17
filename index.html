@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <title>Netflix Login</title>
+</head>
+<body>
+    <header class="site-header">
+        <img class="logotipo" src="img/Netflix-Logo.wine.svg" alt="Logo Netflix">
+    </header>
+
+    <main class="formulario-login contenedor">
+        <form action="">
+            <legend>Inicia Sesión</legend>
+            <div class="campo">
+                <input type="text" id="usuario">
+                <label>Email o número de teléfono</label>    
+            </div>
+            <div class="campo">
+                <input type="password" id="password">
+                <label>Contraseña</label> 
+            </div>
+            <div class="submit">
+                <input type="submit" value="Iniciar sesión">
+            </div>
+            <div class="acciones">
+                <div class="recuerdame">
+                    <input type="checkbox">
+                    <label>Recuerdame</label>
+                </div>
+                <div class="ayuda">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </div>
+        </form>
+
+        <div class="contenido-inferior">
+            <a href="#">Iniciar sesión con facebook</a>
+            <p class="nuevo-usuario">
+                ¿Primera vez en Netflix? <a href="#">Suscribete ya</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>¿preguntas? Llama al 01800-255-016</p>
+
+            <nav class="menu-footer">
+                <a href="#">Términos de las tarjetas de regalo</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Declaración de privacidad</a>
+            </nav>
+
+            <select class="lenguaje">
+                <option value="eng">Ingles</option>
+                <option value="esp">Español</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>
