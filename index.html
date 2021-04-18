@@ -14,14 +14,14 @@
     </header>
 
     <main class="formulario-login contenedor">
-        <form action="">
+        <form name="login" onsubmit="return validarformulario()" method="POST">
             <legend>Inicia Sesión</legend>
             <div class="campo">
-                <input type="text" id="usuario">
+                <input type="text" id="usuario" name="usuario">
                 <label>Email o número de teléfono</label>    
             </div>
             <div class="campo">
-                <input type="password" id="password">
+                <input type="password" id="password" name="password">
                 <label>Contraseña</label> 
             </div>
             <div class="submit">
@@ -62,5 +62,8 @@
             </select>
         </div>
     </footer>
+
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
