@@ -1,3 +1,69 @@
+.usuario {
+  background-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .usuario {
+    background-color: #000000;
+    background-image: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 4rem;
+  color: #FFFFFF;
+}
+
+.contenido {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+  .contenido {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.usuarios {
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .usuarios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.usuarios .user {
+  width: 200px;
+  margin-top: 1rem;
+  border: 2px solid #454545;
+}
+
+@media (min-width: 768px) {
+  .usuarios .user {
+    max-width: 150px;
+  }
+}
+
+.usuarios .texto {
+  text-align: center;
+}
+
 html {
   box-sizing: border-box;
 }
