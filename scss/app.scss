@@ -19,7 +19,7 @@ img {
 body {
     background-color: $negro;
     font-family: $fuentePrincipal;
-    color:$gris2;
+    color:$blanco;
 
     @include tablet {
         background-color: unset;
