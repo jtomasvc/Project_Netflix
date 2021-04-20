@@ -64,8 +64,128 @@
   text-align: center;
 }
 
+.logotipo-home {
+  max-width: 120px;
+  margin-top: -8px;
+}
+
+.home {
+  background-color: black;
+}
+
+.home .header-home {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #0b0b0b;
+}
+
+.home .header-home .campo {
+  margin-top: 14px;
+  margin-right: 0;
+}
+
+@media (min-width: 1200px) {
+  .home .header-home {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0b0b0b;
+  }
+  .home .header-home .campo {
+    margin-right: 200px;
+    margin-top: 34px;
+  }
+}
+
+.logo-menu {
+  display: flex;
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  .menu li {
+    padding: 1rem;
+  }
+  .menu li:hover {
+    cursor: pointer;
+  }
+}
+
+.absolute {
+  position: absolute;
+  width: 30%;
+  border: 2px solid #b6b6b6;
+  background-color: #1c1c1c;
+  padding: .5rem;
+}
+
+@media (min-width: 1200px) {
+  .absolute {
+    position: absolute;
+    width: 10%;
+    border: 2px solid #b6b6b6;
+    background-color: #1c1c1c;
+    padding: .5rem;
+  }
+}
+
+.relative {
+  position: relative;
+  color: #757575;
+  padding: .5rem;
+  display: flex;
+}
+
+.popular {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.item-carousel {
+  margin-right: 4px;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.tamano-main {
+  max-width: 1903px;
+  max-height: 850px;
+}
+
+.tamano-secundario {
+  max-width: 468px;
+  max-height: 234px;
+}
+
+.centrado {
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+}
+
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,

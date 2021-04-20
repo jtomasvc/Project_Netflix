@@ -1,9 +1,11 @@
 @import 'variables';
 @import 'mixins';
 @import 'usuario';
+@import 'home';
 
 html {
     @include box-sizing(border-box);
+    overflow-x: hidden;
 }
 
 *,
@@ -28,6 +30,7 @@ body {
         background-size: cover;
         background-position:bottom center;
     }
+    
 }
 
 a {
