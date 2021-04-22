@@ -1,0 +1,52 @@
+.usuario {
+    background-color: $negro;
+
+    @include tablet {
+        background-color: $negro;
+        background-image: unset;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:bottom center;
+    }
+}
+.titulo {
+    text-align: center;
+    margin-top: 4rem;
+    color: $blanco;
+}
+
+.contenido {
+    width: 100%;
+    margin: 0 auto;
+    @include telefono {
+        max-width: 90%;
+    }
+
+    @include tablet {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.usuarios {
+    text-align: center;
+    @include telefono {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;    
+    }
+
+        .user {
+            width: 200px;
+            margin-top: 1rem;
+            border: 2px solid $gris3;
+
+            @include tablet {
+                max-width: 150px;
+            }
+        }
+        .texto {
+            text-align: center;
+        }
+
+}

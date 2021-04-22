@@ -1,0 +1,18 @@
+@import './base/base';
+@import './base/buttons';
+@import './base/config';
+@import './base/typography';
+
+
+@import './components/flex';
+@import './components/utilities';
+
+@import './lib/variables';
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/NetflixSans_W_Rg.woff2') format('woff2'),
+         url('../fonts/NetflixSans_W_Md.woff2') format('woff2'),
+         url('../fonts/nf-icon-v1-93.woff') format('woff')
+    
+}
