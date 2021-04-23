@@ -2,6 +2,10 @@
 @import 'mixins';
 @import 'usuario';
 @import 'home';
+@import 'principal';
+
+
+
 
 html {
     @include box-sizing(border-box);
@@ -18,7 +22,16 @@ img {
     width: 100%;
 }
 
+a:hover {
+    text-decoration: none!important;
+}
+
 body {
+    font-family: $fuentePrincipal;
+    color:$blanco;
+}
+
+.background-inicio {
     background-color: $negro;
     font-family: $fuentePrincipal;
     color:$blanco;
@@ -28,10 +41,13 @@ body {
         background-image: url('../assets/bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position:bottom center;
+        background-position:center center;
+        height: 108vh;
     }
     
 }
+
+
 
 a {
     color: $gris2;

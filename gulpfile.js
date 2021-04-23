@@ -7,7 +7,7 @@ function css() {
         .src('sass/app.scss')
         .pipe(autoprefixer())
         .pipe(sass({outputStyle: 'expanded'})) //nested, compact, expanded, compressed
-        .pipe(gulp.dest('CSS'))
+        .pipe(gulp.dest('css'))
 }
 
 function watch(){

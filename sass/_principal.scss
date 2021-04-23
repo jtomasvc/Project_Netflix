@@ -1,0 +1,236 @@
+
+.otro-background {
+    background-image: url(../assets/bg.jpg);
+    height: 95vh;
+}
+
+.borde-inferior {
+    border-bottom: 10px solid $gris3;
+}
+
+select {
+    margin-top: 2rem;
+    appearance: none;
+    padding: 1rem 3rem;
+    border: 1px solid $gris3;
+    border-radius: $radius;
+    font-size: .8rem;
+    background-color: $negro;
+    color:$gris2;
+    height: 50px;
+}
+.submit-boton {
+    margin-top: 2rem;
+    input[type="submit"] {
+        @include otroBoton($primario);
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    .orden {
+        display: flex;
+    }
+}
+
+.contenido-main{
+    text-align: center;
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 70px;
+
+    .titulo-main{
+        font-size: 4.3rem;
+    }
+
+    .subtitulo-main {
+        font-size: 1.625rem;
+        margin-bottom:3rem;
+    }
+}
+
+.contenido-form{
+    display: flex;
+    justify-content: center;
+
+    .input-email {
+        min-width: 450px;
+        height: 4rem;
+        margin-top: 2rem;
+    }
+
+    .submit-comenzar {
+        margin-top: 2rem;
+        input[type="submit"] {
+            @include otroBotoncito($primario);
+            &:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+.disfruta {
+    background-color: $negro;
+
+    .contenedor {
+        h2 {
+            margin: 0;
+        }
+
+        .tv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px;
+            justify-content: space-around;
+
+            .smart {
+                width: 52%;
+            }
+
+            .smarttv {
+                font-size: 3.125rem;
+                line-height: 1.1;
+                margin-bottom: .5rem;
+                width: 52%;
+            }
+
+            .smarttv-offline {
+                font-size: 3.125rem;
+                line-height: 1.1;
+                margin-bottom: .5rem;
+                width: 60%;
+            }
+
+            .smarttv-donde {
+                font-size: 3.125rem;
+                line-height: 1.1;
+                margin-bottom: .5rem;
+            }
+
+            .opciones-reproduccion {
+                font-size: 1.625rem;
+                font-weight: 400;
+            }
+
+            .tamano-index {
+                max-width: 600px;
+                max-height: 320px;
+            }
+        }
+    }
+}
+
+.preguntas {
+    background-color: $negro;
+
+    .contenedor{
+        padding: 80px;
+
+        h2 {
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .preguntas-frecuentes {
+            text-align: center;
+            font-size: 3.125rem;
+            line-height: 1.1;
+            margin-bottom: .5rem;
+        }
+
+        .lista-preguntas {
+            width: 75%;
+            margin: 2em auto;
+            font-size: 1.625rem;
+            font-weight: 400;
+
+            .estandar-li {
+                list-style: none;
+                margin: 0 0 8px 0;
+
+                .button-li{
+                    padding: .8em 2.2em .8em 1.2em;
+                    margin-bottom: 1px;
+                    font-weight: 400;
+                    position: relative;
+                    width: 100%;
+                    border: 0;
+                    text-align: left;
+                    background-color: $gris3;
+                    color: $blanco;
+                    display: flex;
+                    justify-content: space-between;
+                    cursor: pointer;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    i {
+                        display: flex;
+                        align-self: center;
+                    }
+                }
+            }
+
+            .card-abierta {
+                background-color: $gris3;
+                .estilos-span {
+                    padding: 1.2em;
+                    display: inline-block;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.color-footer {
+    background-color: $negro;
+
+    .footer{
+        padding: 70px 45px;
+        margin: 0 auto;
+        max-width: 80%;
+
+        p {
+            padding: 0;
+            margin: 0 0 30px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            max-width: 1000px;
+            font-size: 16px;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            .footer-link-item {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0;
+                margin-bottom: 16px;
+                display: inline-block;
+                min-width: 100px;
+                width: 25%;
+                padding-right: 12px;
+                vertical-align: top;
+            }
+        }
+    }
+}

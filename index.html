@@ -1,102 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>Netflix</title>
 </head>
 <body>
-    
-       
-        
-    
-    <section class="hero">
-        <img class="logo" src="./Assets/Netflix-Logo.wine.svg" alt="Netflix-Logo">
-        <h1>Unlimited movies, TV <br> shows, and more.</h1>
-        <h2>Watch anywhere. Cancel anytime</h2>
-        <h3>Ready to watch? Enter your email to <br>
-        create or restart your membership.</h3>
+    <section class="otro-background borde-inferior">
+        <div class="contenedor">
+            <header>
+                <img class="logotipo" src="assets/Netflix-Logo.wine.svg" alt="">
+                <div class="orden">
+                    <select class="lenguaje">
+                        <option value="eng">Ingles</option>
+                        <option value="esp">Español</option>
+                    </select>
+                    
+                    <div class="submit-boton distancia">
+                        <a href="Login.html"><input type="submit" value="Iniciar sesión"></a>
+                    </div>
+                </div>
+            </header>
 
-        <label  class="input" for="username">
-            <input type="email" name="" id="username" placeholder="email address">
-        </label>
-        <br>
-        <label class="btn" for="getStarted">
-            <a href="Login.html"><input type="button" value="Get Started"></a>
-        </label>
+            <div class="contenido-main">
+                <h1 class="titulo-main">Películas y series ilimitadas y mucho más.</h1>
+                <h2 class="subtitulo-main">Disfruta donde quieras. Cancela cuando quieras</h2>
+
+                <form>
+                    <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reinicar tu membresía de Netflix.</h3>
+                    <div class="contenido-form">
+                        <input class="input-email" placeholder="Email" type="email">
+                        <div class="submit-comenzar distancia">
+                            <a href="Login.html"><input type="submit" value="Empezar"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
-    <section class="section2">
-        <h1>Enjoy on your TV.</h1>
-        <h2>Watch on Smart TVs, Playstation, Xbox, <br> Chromecast, Apple TV, Blu-ray players, and <br> more.</h2>
-        <img class="tv" src="./assets/tv.png" alt="TV">
-    </section>
-    <section class="section3">
-        <h1>Download your shows to <br> watch offline.</h1>
-        <h2>Save your favorites easily and always have something to watch.</h2>
-        <img class="imgMobile" src="./assets/mobile-0819.jpg" alt="Mobile">
-    </section>
-    <section class="section4">
-        <h1>Watch everywhere.</h1>
-        <h2>Stream unlimited movies and TV shows on <br> your phone, table, laptop, and TV without <br>paying more.</h2>
-        <img class="macPc" src="./assets/device-pile.png" alt="MAC pc">
-    </section>
-    <section class="FAQ">
-        <h1>Frequently Asked Questions</h1>
-        <ul class="faq-list">
-            <li class="faq-list-item"></li>
-            <button class="faq-question">What is Netflix?<img class="plus" src="./assets/plus.svg" alt="plus"> </button>
-            <div><span></span></div>
-            <li class="faq-list-item"></li>
-            <button class="faq-question">How much does Netflix cost?<img class="plus" src="./assets/plus.svg" alt="plus"> </button>
-            <div><span></span></div>
-            <li class="faq-list-item"></li>
-            <button class="faq-question">Where can I watch?<img class="plus" src="./assets/plus.svg" alt="plus"> </button>
-            <div><span></span></div>
-            <li class="faq-list-item"></li>
-            <button class="faq-question">How do I cancel?<img class="plus" src="./assets/plus.svg" alt="plus"> </button>
-            <div><span></span></div>
-            <li class="faq-list-item"></li>
-            <button class="faq-question">What can I watch on Netflix?<img class="plus" src="./assets/plus.svg" alt="plus"> </button>
-            <div><span></span></div>
-        </ul>
-        <h3>Ready to watch? Enter your email to <br> create or restart your membership.</h3>
-        <label class="input_id" >
-            <input type="email" data-uia="field-email" name="email" class="nfTextField" id="id_email_faq" value="" tabindex="0" autocomplete="email" maxlength="50" minlength="5" dir="" placeholder="Email Address" >
-        </label>        
-        <label class="btn" for="getStarted">
-            <input type="button" value="Get Started >">
-        </label>
-    </section>
-    <footer>
-        <div class="footer-top">
-            <p>Questions? Call <a href="tel:01 800 917 1563">01 800 917 1563</a></p>
-            <ul>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Account</a></li>
-                <li><a href="">Investor Relations</a></li>
-                <li><a href="">Redeem Gift Cards</a></li>
-                <li><a href="">Ways to watch</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Corporate Information</a></li>
-                <li><a href="">Speed Test</a></li>
-                <li><a href="">Netflix Originals</a></li>
-                <li><a href="">Help Center</a></li>
-                <li><a href="">Media Center</a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="">Buy Gift Cards</a></li>
-                <li><a href="">Terms of Use</a></li>
-                <li><a href="">Cookie Preferences</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Legal Notices</a></li>     
-            
-            </ul>  
-        </div>      
+
+    <div class="disfruta borde-inferior">
+        <div class="contenedor">
+             <div class="tv">
+                 <div class="smart">
+                    <h2 class="smarttv">Disfruta en tu TV.</h2>
+                    <p class="opciones-reproduccion">Ve en smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores de 
+                   Blu-ray y más</p>
+                 </div>
+                 <div class="imagen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z2wPBG-GSJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+             </div>
+        </div>  
+    </div>
+
+    <div class="disfruta borde-inferior">
+        <div class="contenedor">
+             <div class="tv">
+                 <div class="imagen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6UyACoBF2uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+                 <div class="smart">
+                    <h2 class="smarttv-offline">Descarga tus series para verlas offline.</h2>
+                    <p class="opciones-reproduccion">Guarda tu contenido favorito y ten siempre algo para ver</p>
+                 </div>
+             </div>
+        </div>  
+    </div>
+ 
+
+    <div class="disfruta borde-inferior">
+        <div class="contenedor">
+             <div class="tv">
+                 <div class="smart">
+                    <h2 class="smarttv-donde">Disfruta donde quieras.</h2>
+                    <p class="opciones-reproduccion">Películas y series ilimitadas en tu teléfono, tablet, computadora, y TV sin costo extra.</p>
+                 </div>
+                 <div class="imagen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r_lLfqmHQAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+             </div>
+        </div>  
+    </div>
+
+    <div class="preguntas borde-inferior">
+        <div class="contenedor">
+            <h2 class="preguntas-frecuentes">Preguntas Frecuentes</h2>
+
+            <ul class="lista-preguntas">
+                <li class="estandar-li">
+                    <button class="button-li">
+                        <p>¿Que es Netflix?</p>
+                        <i class="fas fa-plus"></i>
+                    </button>
+
+                    <div class="card-abierta">
+                        <span class="estilos-span">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem doloribus expedita hic doloremque libero itaque architecto odio voluptatum quod nam voluptatem eaque quidem magnam laboriosam sunt, laborum enim tempore.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="estandar-li">
+                    <button class="button-li">
+                        <p>¿Que es Netflix?</p>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="card-abierta">
+                        <span class="estilos-span">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+               exercitationem doloribus expedita hic doloremque libero itaque 
+               architecto odio voluptatum quod nam voluptatem eaque quidem magnam 
+               laboriosam sunt, laborum enim tempore.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="estandar-li">
+                    <button class="button-li">
+                        <p>¿Que es Netflix?</p>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="card-abierta">
+                        <span class="estilos-span">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+               exercitationem doloribus expedita hic doloremque libero itaque 
+               architecto odio voluptatum quod nam voluptatem eaque quidem magnam 
+               laboriosam sunt, laborum enim tempore.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="estandar-li">
+                    <button class="button-li">
+                        <p>¿Que es Netflix?</p>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="card-abierta">
+                        <span class="estilos-span">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+               exercitationem doloribus expedita hic doloremque libero itaque 
+               architecto odio voluptatum quod nam voluptatem eaque quidem magnam 
+               laboriosam sunt, laborum enim tempore.
+                        </span>
+                    </div>
+                </li>
+
+                <li class="estandar-li">
+                    <button class="button-li">
+                        <p>¿Que es Netflix?</p>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="card-abierta">
+                        <span class="estilos-span">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+               exercitationem doloribus expedita hic doloremque libero itaque 
+               architecto odio voluptatum quod nam voluptatem eaque quidem magnam 
+               laboriosam sunt, laborum enim tempore.
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <form>
+                <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reinicar 
+tu membresía de Netflix.</h3>
+                <div class="contenido-form">
+                    <input class="input-email" placeholder="Email" type="email">
+                    <div class="submit-comenzar distancia">
+                        <a href="Login.html"><input type="submit" value="Empezar"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="color-footer">
+        <div class="contenedor">
+            <div class="footer">
+                <p>¿Preguntas? Llama al 01 800 917 1564</p>
+
+                <ul class="footer-links">
+                    <li class="footer-link-item"><a href="#">Preguntas Frecuentes</a></li>
+                    <li class="footer-link-item"><a href="#">Centro de ayuda</a></li>
+                    <li class="footer-link-item"><a href="#">Cuenta</a></li>
+                    <li class="footer-link-item"><a href="#">Prensa</a></li>
+                    <li class="footer-link-item"><a href="#">Relaciones con inversionistas</a></li>
+                    <li class="footer-link-item"><a href="#">Empleo</a></li>
+                    <li class="footer-link-item"><a href="#">Canjear tarjetas de regalo</a></li>
+                    <li class="footer-link-item"><a href="#">Comprar tarjetas de regalo</a></li>
+                    <li class="footer-link-item"><a href="#">Formas de ver</a></li>
+                    <li class="footer-link-item"><a href="#">Términos de uso</a></li>
+                    <li class="footer-link-item"><a href="#">Privacidad</a></li>
+                    <li class="footer-link-item"><a href="#">Preferencias de cookies</a></li>
+                    <li class="footer-link-item"><a href="#">Información corporativa</a></li>
+                    <li class="footer-link-item"><a href="#">Contáctanos</a></li>
+                    <li class="footer-link-item"><a href="#">Prueba de velocidad</a></li>
+                    <li class="footer-link-item"><a href="#">Avisos legales</a></li>
+                    <li class="footer-link-item"><a href="#">Originales de Netflix</a></li>
+                </ul>
+
+                <select class="lenguaje">
+                    <option value="eng">Ingles</option>
+                    <option value="esp">Español</option>
+                </select>
+            </div>
+        </div>
     </footer>
-    
-    <script src="./index.js"></script>
-
-    </script>
 </body>
 </html>
