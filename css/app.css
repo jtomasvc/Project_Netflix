@@ -18,6 +18,10 @@
   color: #FFFFFF;
 }
 
+.block {
+  display: block;
+}
+
 .contenido {
   width: 100%;
   margin: 0 auto;
@@ -66,7 +70,7 @@
 
 .logotipo-home {
   max-width: 120px;
-  margin-top: -8px;
+  margin-top: 18px;
 }
 
 .home {
@@ -154,6 +158,77 @@
 
 .item-carousel {
   margin-right: 4px;
+  z-index: 1;
+  transition: all .45s;
+  position: relative;
+}
+
+.item-carousel .hover {
+  padding: 1rem;
+  box-shadow: 0 2px 2px #000;
+  display: none;
+}
+
+.item-carousel .hover .contenido-hover {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-carousel .hover .contenido-hover .lista-hover {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.item-carousel .hover .contenido-hover .lista-hover .espacio-hover {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.item-carousel .hover .contenido-hover .boton-mas {
+  cursor: pointer;
+}
+
+.item-carousel .hover .para-ti {
+  color: #46d369;
+  margin-right: 18px;
+  font-weight: bold;
+}
+
+.item-carousel .hover .clasificacion {
+  border: 1px solid white;
+  margin-right: 18px;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+.item-carousel .hover .tiempo {
+  font-weight: bold;
+}
+
+.item-carousel .hover .drama {
+  margin-right: 18px;
+  font-weight: bold;
+}
+
+.item-carousel:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 2;
+}
+
+.item-carousel:first-child {
+  transform-origin: center left;
+}
+
+.item-carousel:last-child {
+  transform-origin: center right;
+}
+
+.item-carousel:hover .hover {
+  display: block;
+  transform: scale(1);
 }
 
 .owl-dots {
@@ -174,8 +249,9 @@
 }
 
 .tamano-secundario {
-  max-width: 468px;
-  max-height: 234px;
+  max-width: 470px;
+  max-height: 220px;
+  border-radius: 8px;
 }
 
 .centrado {
@@ -184,6 +260,194 @@
 
 footer p {
   font-size: 12px;
+}
+
+.modal-contenido {
+  background-color: #181818;
+  width: 60%;
+  margin: 10% auto;
+  position: relative;
+}
+
+.modal-contenido .contenido-imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.modal-contenido .contenido-imagen .close {
+  position: absolute;
+  margin: 1rem 1rem;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen {
+  position: absolute;
+  top: 70%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .n-netflix {
+  width: 10%;
+  margin-right: .5rem;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .serie {
+  font-size: 20px;
+  letter-spacing: .3rem;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .parrafo-imagen {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .duracion {
+  display: flex;
+  align-items: center;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .duracion .progreso {
+  height: 2px;
+  display: block;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 10px;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .duracion .progreso span {
+  width: 87%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: #e50914;
+}
+
+.modal-contenido .contenido-imagen .texto-imagen .duracion .tiempo {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.modal-contenido .contenido-modal {
+  padding: 2rem 2rem;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+  overflow-y: auto;
+}
+
+#miModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-acciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-acciones .accion-play {
+  padding: 10px 0px;
+  font-size: 16rem;
+  font-weight: 700;
+}
+
+.modal-acciones .boton-rectangular {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 28px;
+  font-size: 22px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: none;
+}
+
+.modal-acciones .boton-rectangular .fa-play {
+  margin-right: 20px;
+}
+
+.modal-acciones .right {
+  margin-right: 20px;
+}
+
+.detalles-modal {
+  display: flex;
+}
+
+.detalles-modal .detalles {
+  display: flex;
+  flex: 0 0 70%;
+}
+
+.detalles-modal .metadatos {
+  display: flex;
+  flex: 0 0 30%;
+}
+
+.detalle-episodio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.detalle-episodio .temporadas {
+  padding: 9px 18px;
+  background-color: #242424;
+  border: .1em solid #4d4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  border-radius: 4px;
+  color: white;
+}
+
+.detalle-episodio .temporadas p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.episodios {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.episodios .numero-episodio {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.episodios .imagen-episodio {
+  padding: 1rem;
+}
+
+.episodios .datos-episodio {
+  padding: 1rem;
+}
+
+.episodios .datos-episodio .titulo-episodio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .otro-background {
@@ -444,6 +708,10 @@ header .orden {
   width: 25%;
   padding-right: 12px;
   vertical-align: top;
+}
+
+.panel {
+  display: none;
 }
 
 html {

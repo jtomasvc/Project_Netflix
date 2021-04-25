@@ -1,6 +1,6 @@
 .logotipo-home {
     max-width: 120px;
-    margin-top: -8px;
+    margin-top: 18px;
 }
 .home {
     background-color: black;
@@ -82,9 +82,81 @@
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
-.item-carousel {
+.item-carousel{
     margin-right: 4px;
+    z-index: 1;
+    transition: all .45s;
+    position: relative;
+    .hover {
+        padding: 1rem;
+        box-shadow: 0 2px 2px #000;
+        display: none;
+        .contenido-hover {
+            display: flex;
+            justify-content: space-between;
+            .lista-hover {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+    
+                .espacio-hover {
+                    margin-right: 30px;
+                    cursor: pointer;
+                }
+            }
+    
+            .boton-mas{
+                cursor: pointer;
+            }
+    
+        }
+    
+        .para-ti {
+            color:#46d369;
+            margin-right: 18px;
+            font-weight: bold;
+        }
+    
+        .clasificacion {
+            border: 1px solid white;
+            margin-right: 18px;
+            padding: .5rem;
+            font-weight: bold;
+        }
+    
+        .tiempo {
+            font-weight: bold;
+        }
+    
+        .drama {
+            margin-right: 18px;
+            font-weight: bold;
+        }
+    }
+
 }
+
+.item-carousel:hover{
+    transform:scale(1.2);
+    position: relative;
+    z-index: 2;
+}
+.item-carousel:first-child {
+    transform-origin: center left;
+}
+
+.item-carousel:last-child {
+    transform-origin: center right;
+}
+
+
+
+.item-carousel:hover .hover{
+    display: block;
+    transform: scale(1);
+}
+
 
 .owl-dots {
     display: none;
@@ -104,8 +176,9 @@
 }
 
 .tamano-secundario {
-    max-width: 468px;
-    max-height: 234px;
+    max-width: 470px;
+    max-height: 220px;
+    border-radius: 8px;
 }
 
  .centrado {
@@ -116,5 +189,187 @@
 footer p {
     font-size: 12px
 }
-   
-   
+
+.modal-contenido{
+    background-color:#181818;
+    width:60%;
+    margin: 10% auto;
+    position: relative;
+
+    .contenido-imagen {
+        position: relative;
+        display: inline-block;
+        .close {
+            position: absolute;
+            margin: 1rem 1rem;
+        }
+        .texto-imagen {
+            position: absolute;
+            top: 70%;
+            left: 22%;
+            transform: translate(-50%, -50%);
+
+            .n-netflix {
+                width: 10%;
+                margin-right: .5rem;
+            }
+
+            .serie {
+                font-size: 20px;
+                letter-spacing: .3rem;
+            }
+
+            .parrafo-imagen {
+                font-size: 48px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .duracion {
+                display: flex;
+                align-items: center;
+                .progreso {
+                    height: 2px;
+                    display: block;
+                    position: relative;
+                    background-color: hsla(0,0%,100%,.3);
+                    margin-right: 10px;
+                    flex-grow: 1;
+                    margin-top: 20px;
+                }
+                .progreso span {
+                    width: 87%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 2px;
+                    background-color: #e50914;
+                }
+
+                .tiempo {
+                    font-weight: bold;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .contenido-modal{
+        padding: 2rem 2rem;
+    }
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    overflow-y: auto;
+  
+  }
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .modal-acciones{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .accion-play {
+        padding: 10px 0px;
+        font-size: 16rem;
+        font-weight: 700;
+      }
+        .boton-rectangular {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 28px;
+        font-size: 22px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: none;
+
+        .fa-play {
+            margin-right: 20px;
+        }
+
+      }
+
+      .right{
+        margin-right: 20px;
+    }
+
+  }
+
+  .detalles-modal {
+       display: flex;
+
+       .detalles {
+           display: flex;
+           flex: 0 0 70%
+       }
+
+       .metadatos {
+           display: flex;
+           flex:0 0 30%
+       }
+  }
+
+  .detalle-episodio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid white;
+
+      .temporadas {
+        padding: 9px 18px;
+        background-color: #242424;
+        border: .1em solid #4d4d4d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 22px;
+        border-radius: 4px;
+        color: white;
+
+        p {
+            margin: 0;
+            margin-right: 10px;
+        }
+      }
+  }
+
+  .episodios {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid white;
+
+      .numero-episodio {
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .imagen-episodio {
+          padding: 1rem;
+      }
+
+      .datos-episodio {
+          padding: 1rem;
+
+          .titulo-episodio {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+      }
+  }
