@@ -9,15 +9,20 @@
 }
 
 select {
-    margin-top: 2rem;
-    appearance: none;
-    padding: 1rem 3rem;
-    border: 1px solid $gris3;
-    border-radius: $radius;
-    font-size: .8rem;
-    background-color: $negro;
-    color:$gris2;
-    height: 50px;
+    display: none;
+
+    @include telefono {
+        margin-top: 2rem;
+        appearance: none;
+        padding: 1rem 3rem;
+        border: 1px solid $gris3;
+        border-radius: $radius;
+        font-size: .8rem;
+        background-color: $negro;
+        color:$gris2;
+        height: 50px;
+        display: block;
+    }
 }
 .submit-boton {
     margin-top: 2rem;
@@ -33,7 +38,12 @@ select {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @include telefono {
+        display: flex;
+        justify-content: space-between;
+    }
     .orden {
         display: flex;
     }
@@ -41,12 +51,23 @@ header {
 
 .contenido-main{
     text-align: center;
-    width: 950px;
-    margin: 0 auto;
+    width:unset;
+    margin:auto;
     padding-top: 70px;
 
+    @include  telefono {
+        text-align: center;
+        width: 950px;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+
     .titulo-main{
-        font-size: 4.3rem;
+        font-size: 2rem;
+
+        @include telefono {
+            font-size: 4.3rem;
+        }
     }
 
     .subtitulo-main {
@@ -56,22 +77,50 @@ header {
 }
 
 .contenido-form{
-    display: flex;
+    display: block;
     justify-content: center;
 
+    @include telefono{
+        display: flex;
+        justify-content: center;
+    }
+
     .input-email {
-        min-width: 450px;
+        min-width: 100%;
         height: 4rem;
         margin-top: 2rem;
+
+        @include telefono {
+            min-width: 450px;
+            height: 4rem;
+            margin-top: 2rem; 
+        }
     }
 
     .submit-comenzar {
         margin-top: 2rem;
+        margin-left: 16%;
+
+        @include telefono {
+            margin-left: 0;
+        }
+
         input[type="submit"] {
             @include otroBotoncito($primario);
             &:hover {
                 cursor: pointer;
                 text-decoration: none;
+            }
+        }
+
+        @include telefono {
+           
+            input[type="submit"] {
+                @include otroBotoncito($primario);
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -87,44 +136,96 @@ header {
         }
 
         .tv {
-            display: flex;
+            display: block;
             justify-content: center;
             align-items: center;
-            padding: 80px;
+            padding: 20px 0;
             justify-content: space-around;
 
+            @include telefono {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 80px;
+                justify-content: space-around;
+            }
+
             .smart {
-                width: 52%;
+                width: 100%;
+
+                @include telefono {
+                    width: 52%;
+                }
             }
 
             .smarttv {
-                font-size: 3.125rem;
+                font-size: 2.125rem;
                 line-height: 1.1;
                 margin-bottom: .5rem;
-                width: 52%;
+                width: 100%;
+                text-align: center;
+
+                @include telefono {
+                    font-size: 3.125rem;
+                    line-height: 1.1;
+                    margin-bottom: .5rem;
+                    width: 52%; 
+                }
             }
 
             .smarttv-offline {
-                font-size: 3.125rem;
+                font-size: 2.125rem;
                 line-height: 1.1;
                 margin-bottom: .5rem;
-                width: 60%;
+                width: 100%;
+
+                @include telefono {
+                    font-size: 3.125rem;
+                    line-height: 1.1;
+                    margin-bottom: .5rem;
+                    width: 60%;
+                }
             }
 
             .smarttv-donde {
-                font-size: 3.125rem;
+                font-size: 2.125rem;
                 line-height: 1.1;
                 margin-bottom: .5rem;
+                text-align: center;
+
+                @include telefono {
+                    font-size: 3.125rem;
+                    line-height: 1.1;
+                    margin-bottom: .5rem;
+                    text-align: left;
+     
+                }
             }
 
             .opciones-reproduccion {
-                font-size: 1.625rem;
+                font-size: 1rem;
                 font-weight: 400;
+                text-align: center;
+
+                @include telefono {
+                    font-size: 1.625rem;
+                    font-weight: 400;
+                    text-align: inherit;
+                }
             }
 
             .tamano-index {
                 max-width: 600px;
                 max-height: 320px;
+            }
+
+            iframe {
+                width: 100%;
+
+                @include  telefono {
+                    width: 560px;
+                    height: 315px;
+                }
             }
         }
     }
@@ -132,9 +233,14 @@ header {
 
 .preguntas {
     background-color: $negro;
+    padding-bottom: 2rem;
 
     .contenedor{
-        padding: 80px;
+        padding: 0px;
+
+        @include telefono {
+            padding: 80px;
+        }
 
         h2 {
             margin: 0;
@@ -146,16 +252,33 @@ header {
 
         .preguntas-frecuentes {
             text-align: center;
-            font-size: 3.125rem;
+            font-size: 2.125rem;
             line-height: 1.1;
             margin-bottom: .5rem;
+            padding-top: 1.5rem;
+
+            @include telefono {
+                text-align: center;
+                font-size: 3.125rem;
+                line-height: 1.1;
+                margin-bottom: .5rem; 
+                padding-top: unset;
+            }
         }
 
         .lista-preguntas {
-            width: 75%;
+            width: 100%;
             margin: 2em auto;
             font-size: 1.625rem;
             font-weight: 400;
+            padding: 0;
+
+            @include telefono {
+                width: 75%;
+                margin: 2em auto;
+                font-size: 1.625rem;
+                font-weight: 400;
+            }
 
             .estandar-li {
                 list-style: none;
@@ -202,13 +325,26 @@ header {
     background-color: $negro;
 
     .footer{
-        padding: 70px 45px;
-        margin: 0 auto;
-        max-width: 80%;
+
+        padding: unset;
+        max-width:unset;
+        padding-bottom: 2rem;
+
+        @include telefono {
+            padding: 70px 45px;
+            margin: 0 auto;
+            max-width: 80%;
+
+            p {
+                padding: 0;
+                margin: 0 0 30px;
+                font-size: 1.2rem;
+            }
+
+        }
 
         p {
-            padding: 0;
-            margin: 0 0 30px;
+            margin-top: 2rem; 
             font-size: 1.2rem;
         }
 

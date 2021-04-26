@@ -1,6 +1,13 @@
 .logotipo-home {
     max-width: 120px;
     margin-top: 18px;
+    margin-left: -30px;
+
+    @include telefono {
+        max-width: 120px;
+        margin-top: 18px;
+        margin-left: 0;
+    }
 }
 .home {
     background-color: black;
@@ -13,9 +20,9 @@
         justify-content: space-around;
         width: 100%;
         background-color: #0b0b0b;
+        align-items: center;
     
         .campo {
-            margin-top:14px;
             margin-right: 0;
         }
 
@@ -27,7 +34,6 @@
 
             .campo {
                 margin-right: 200px;
-                margin-top: 34px;
             }
         }
     }
@@ -82,6 +88,7 @@
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
+
 .item-carousel{
     margin-right: 4px;
     z-index: 1;
@@ -138,9 +145,14 @@
 }
 
 .item-carousel:hover{
-    transform:scale(1.2);
+    transform:scale(1);
     position: relative;
-    z-index: 2;
+    z-index: 1;
+    @include telefono {
+        transform:scale(1.2);
+        position: relative;
+        z-index: 2;    
+    }
 }
 .item-carousel:first-child {
     transform-origin: center left;
@@ -153,8 +165,12 @@
 
 
 .item-carousel:hover .hover{
-    display: block;
-    transform: scale(1);
+    display: none;
+
+    @include telefono {
+        display: block;
+        transform: scale(1);
+    }
 }
 
 
@@ -171,14 +187,25 @@
 }
 
 .tamano-main {
-    max-width: 1903px;
-    max-height: 850px;
+    max-width: 100%;
+    height: 200px;
+
+    @include telefono {
+        max-width: 100%;
+        height: 850px;
+    }
 }
 
 .tamano-secundario {
-    max-width: 470px;
-    max-height: 220px;
+    max-width: 100%;
+    height: 100px;
     border-radius: 8px;
+
+    @include telefono {
+        max-width: 100%;
+        height: 220px;
+        border-radius: 8px;
+    }            
 }
 
  .centrado {
@@ -258,7 +285,7 @@ footer p {
     .contenido-modal{
         padding: 2rem 2rem;
     }
-  }
+}
   .modal{
     background-color: rgba(0,0,0,.8);
     position:fixed;
@@ -275,6 +302,7 @@ footer p {
   #miModal:target{
     opacity:1;
     pointer-events:auto;
+    z-index: 1;
   }
 
   .modal-acciones{
@@ -291,14 +319,29 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 12px 28px;
-        font-size: 22px;
+        padding: 6px 14px;
+        font-size: 12px;
         border-radius: 4px;
         background-color: #fff;
         border: none;
 
         .fa-play {
-            margin-right: 20px;
+            margin-right: 10px;
+        }
+
+        @include telefono {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 28px;
+            font-size: 22px;
+            border-radius: 4px;
+            background-color: #fff;
+            border: none;
+    
+            .fa-play {
+                margin-right: 20px;
+            }
         }
 
       }
@@ -373,3 +416,119 @@ footer p {
           }
       }
   }
+
+
+
+  .item {
+    position: relative;
+
+    .texto-imagen {
+        position: absolute;
+        top: 80%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+
+        @include telefono {
+            position: absolute;
+            top: 60%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+        }
+        .n-netflix {
+            display: none;
+            @include telefono {
+                width: 3%;
+                margin-right: .5rem;
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
+        .serie {
+            display: none;
+            @include telefono {
+                font-size: 20px;
+                letter-spacing: .3rem;
+                display: block;
+            }
+        }
+        .parrafo-imagen {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+
+            @include telefono {
+                font-size: 48px;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+        .duracion {
+            display: flex;
+            align-items: center;
+
+        }
+        .boton-rectangular-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 14px;
+            font-size: 12px;
+            border-radius: 4px;
+            background-color: rgba(89,89,89,.7);
+            border: none;
+            margin-left: 1rem;
+            color: white;
+            cursor: pointer;
+            display: none;
+
+            .fa-info {
+                margin-right: 20px;
+            }
+
+            @include telefono {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 28px;
+                font-size: 22px;
+                border-radius: 4px;
+                background-color: rgba(89,89,89,.7);
+                border: none;
+                margin-left: 1rem;
+                color: white;
+                cursor: pointer;
+                .fa-info {
+                    margin-right: 20px;
+                }       
+            }      
+        }
+
+        .popular {
+            display: none;
+
+            @include telefono {
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                font-weight: 700;
+                display: block;
+            }
+        }
+
+        .sinopsis {
+            display: none;
+
+            @include telefono{
+                width: 40%;
+                font-size: 18px;
+                font-weight: bold;
+                display: block;
+            }
+        }
+
+        .modal-acciones {
+            display: flex;
+            align-items: center;
+            justify-content: unset;
+        }
+    }
+}
