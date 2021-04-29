@@ -17,7 +17,7 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
-        background-color: #0b0b0b;
+        background-color: transparent;
         align-items: center;
         position: relative;
         z-index: 2;
@@ -25,6 +25,17 @@
     
         .campo {
             margin-right: 0;
+        }
+
+        @include telefono {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: transparent;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            transition:all 1s;
         }
 
         @include desktop {
@@ -52,8 +63,14 @@
 
 .logo-menu {
     display: flex;
-    margin-left: 2.5rem;
+    margin-left: 0rem;
     align-items: center;
+
+    @include telefono {
+        display: flex;
+        margin-left: 2.5rem;
+        align-items: center;
+    }
 }
 .menu {
    margin: 0;
@@ -76,14 +93,26 @@
     margin: 0;
 }
 .owl-carousel {
-    margin-top: -115px;
+    margin-top: -64px;
+
+    @include telefono {
+        margin-top: -115px;
+    }
 }
 .absolute {
     position: absolute;
     width: 30%;
     border: 2px solid #b6b6b6;
     background-color: #1c1c1c;
-    padding: .5rem;
+    padding: 0rem;
+
+    @include telefono {
+        position: absolute;
+        width: 30%;
+        border: 2px solid #b6b6b6;
+        background-color: #1c1c1c;
+        padding: .5rem;
+    }
 
     @include desktop {
         position: absolute;
@@ -92,15 +121,21 @@
         background-color: #1c1c1c;
         padding: .5rem;
     
-    
     }
 }
 
 .relative {
     position: relative;
     color: #757575;
-    padding: .5rem;
+    padding: .2rem;
     display: flex;
+
+    @include telefono {
+        position: relative;
+        color: #757575;
+        padding: .5rem;
+        display: flex;
+    }
 }
 
 .popular {
