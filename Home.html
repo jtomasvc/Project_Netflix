@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="home">
-        <header class="header-home">
+        <header class="header-home sticky">
             <div class="logo-menu">
                 <a href="index.html"> <img class="logotipo-home" src="assets/Netflix-Logo.wine.svg" alt="Logo 
                     Netflix">  </a>
@@ -45,7 +45,7 @@
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="tamano-main" src="assets/shazam.jpg" alt="shazam pelicula">
-                <div class="texto-imagen">
+                <div class="texto-imagen-serie">
                     <p class="parrafo-imagen">Justice League</p>
                     <div class="duracion">
                         <span class="popular">Numero 3 en Colombia hoy<span>
@@ -74,7 +74,7 @@
             </div>
             <div class="item">
                 <img class="tamano-main" src="assets/dark.png" alt="dark serie">
-                <div class="texto-imagen">
+                <div class="texto-imagen-serie">
 
                    <span class="ocultar"><img class="n-netflix ocultar" src="assets/n-netflix.png" alt="n Netflix"></span><span class="serie ocultar">Serie</span>
                         
@@ -103,7 +103,7 @@
             </div>
             <div class="item">
                 <img class="tamano-main" src="assets/breaking-bad.jpg" alt="breaking bad serie">
-                <div class="texto-imagen">
+                <div class="texto-imagen-serie">
                     <p class="parrafo-imagen">Breaking Bad</p>
                     <div class="duracion">
                         <span class="popular">Numero 2 en Colombia hoy<span>
@@ -911,9 +911,9 @@
             </div>
         </div>
 
-        <footer class="color-footer">
+        <footer class="color-footerHome">
             <div class="contenedor">
-                <div class="footer">
+                <div class="footer-home">
                     <p>¿Preguntas? Llama al 01 800 917 1564</p>
                     <ul class="footer-links">
                         <li class="footer-link-item"><a href="#">Preguntas Frecuentes</a></li>
@@ -988,6 +988,20 @@
             }
         ]
     });
+    </script>
+    <script>
+        $(document).ready(function(){
+	var altura = $('.sticky').offset().top;
+	
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > altura ){
+			$('.sticky').addClass('menu-fixed');
+		} else {
+			$('.sticky').removeClass('menu-fixed');
+		}
+	});
+
+});
     </script>
 </body>
 </html>

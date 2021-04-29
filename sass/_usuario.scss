@@ -29,6 +29,16 @@
         max-width: 60%;
         margin: 0 auto;
     }
+    
+    @include desktop {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    @include hd {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .usuarios {

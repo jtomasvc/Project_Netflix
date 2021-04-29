@@ -1,16 +1,14 @@
 .logotipo-home {
     max-width: 120px;
-    margin-top: 18px;
     margin-left: -30px;
 
     @include telefono {
         max-width: 120px;
-        margin-top: 18px;
         margin-left: 0;
     }
 }
 .home {
-    background-color: black;
+    background-color: #141414;
     background-size: cover;
     background-position:center center;
     background-repeat: no-repeat;
@@ -21,6 +19,9 @@
         width: 100%;
         background-color: #0b0b0b;
         align-items: center;
+        position: relative;
+        z-index: 2;
+        transition:all 1s;
     
         .campo {
             margin-right: 0;
@@ -30,20 +31,32 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            background-color: #0b0b0b;
+            background-color: transparent;
 
             .campo {
                 margin-right: 200px;
             }
         }
     }
+
+    .menu-fixed {
+        position:fixed;
+        z-index:2;
+        top:0;
+        width:100%;
+        box-shadow:0px 4px 3px rgba(0,0,0,.5);
+        background-color: #141414;
+        transition:all 1s;
+    }
 }
 
 .logo-menu {
     display: flex;
+    margin-left: 2.5rem;
+    align-items: center;
 }
 .menu {
-   
+   margin: 0;
    display: none;
 
     @include telefono {
@@ -59,6 +72,12 @@
     }
 }
 
+.menu p{
+    margin: 0;
+}
+.owl-carousel {
+    margin-top: -115px;
+}
 .absolute {
     position: absolute;
     width: 30%;
@@ -91,7 +110,7 @@
 
 .item-carousel{
     margin-right: 4px;
-    z-index: 1;
+    transform: scale(1);
     transition: all .45s;
     position: relative;
     .hover {
@@ -141,13 +160,12 @@
             font-weight: bold;
         }
     }
-
+    
 }
-
 .item-carousel:hover{
     transform:scale(1);
     position: relative;
-    z-index: 1;
+    z-index: 2;
     @include telefono {
         transform:scale(1.2);
         position: relative;
@@ -161,8 +179,6 @@
 .item-carousel:last-child {
     transform-origin: center right;
 }
-
-
 
 .item-carousel:hover .hover{
     display: none;
@@ -194,6 +210,16 @@
         max-width: 100%;
         height: 850px;
     }
+
+    @include desktop {
+        max-width: 100%;
+        height: 625px;
+    }
+
+    @include hd {
+        max-width: 100%;
+        height: 850px;
+    }
 }
 
 .tamano-secundario {
@@ -205,13 +231,64 @@
         max-width: 100%;
         height: 220px;
         border-radius: 8px;
-    }            
+    }      
+    
+    @include desktop {
+        max-width: 100%;
+        height: 178px;
+        border-radius: 8px;
+    }
+
+    @include hd {
+        max-width: 100%;
+        height: 220px;
+        border-radius: 8px;
+    }
 }
 
  .centrado {
      text-align: center;
 }
-   
+
+ .footer-home{
+     padding: unset;
+     max-width:unset;
+     padding-bottom: 2rem;
+     @include telefono {
+         padding: 70px 45px;
+         margin: 0 auto;
+         max-width: 80%;
+         p {
+             padding: 0;
+             margin: 0 0 30px;
+             font-size: 1.2rem;
+         }
+     }
+     p {
+         margin-top: 2rem; 
+         font-size: 1.2rem;
+     }
+     .footer-links {
+         max-width: 1000px;
+         font-size: 16px;
+         padding-left: 0;
+         display: flex;
+         flex-wrap: wrap;
+         list-style: none;
+         .footer-link-item {
+             -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+             box-sizing: border-box;
+             padding: 0;
+             margin-bottom: 16px;
+             display: inline-block;
+             min-width: 100px;
+             width: 25%;
+             padding-right: 12px;
+             vertical-align: top;
+         }
+     }
+ }
 
 footer p {
     font-size: 12px
@@ -236,6 +313,16 @@ footer p {
             left: 22%;
             transform: translate(-50%, -50%);
 
+            @include desktop {
+                position: absolute;
+                top: 70%;
+                left: 29%;
+                transform: translate(-50%, -50%); 
+            }
+
+            @include hd {
+                left: 22%;
+            }
             .n-netflix {
                 width: 10%;
                 margin-right: .5rem;
@@ -302,7 +389,7 @@ footer p {
   #miModal:target{
     opacity:1;
     pointer-events:auto;
-    z-index: 1;
+    z-index: 3;
   }
 
   .modal-acciones{
@@ -422,7 +509,7 @@ footer p {
   .item {
     position: relative;
 
-    .texto-imagen {
+    .texto-imagen-serie {
         position: absolute;
         top: 80%;
         left: 22%;
@@ -434,6 +521,18 @@ footer p {
             left: 35%;
             transform: translate(-50%, -50%);
         }
+
+        @include desktop {
+            position: absolute;
+            top: 60%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+        }
+
+        @include hd {
+            top: 60%;
+        }
+
         .n-netflix {
             display: none;
             @include telefono {

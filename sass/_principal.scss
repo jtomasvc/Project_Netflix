@@ -62,10 +62,32 @@ header {
         padding-top: 70px;
     }
 
+    @include desktop {
+        text-align: center;
+        width: 950px;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+
+    @include hd {
+        text-align: center;
+        width: 950px;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+
     .titulo-main{
         font-size: 2rem;
 
         @include telefono {
+            font-size: 4.3rem;
+        }
+
+        @include desktop {
+            font-size: 2.3rem;
+        }
+
+        @include hd {
             font-size: 4.3rem;
         }
     }
@@ -150,11 +172,28 @@ header {
                 justify-content: space-around;
             }
 
+            @include desktop {
+                padding: 30px;
+            }
+
+            @include hd {
+                padding: 80px;
+            }
+
             .smart {
                 width: 100%;
 
                 @include telefono {
                     width: 52%;
+                }
+
+                @include desktop {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                @include hd {
+                    padding-left: 0;
                 }
             }
 
@@ -166,6 +205,18 @@ header {
                 text-align: center;
 
                 @include telefono {
+                    font-size: 3.125rem;
+                    line-height: 1.1;
+                    margin-bottom: .5rem;
+                    width: 52%; 
+                }
+
+                @include desktop {
+                    text-align: left;
+                    width: 100%;
+                }
+
+                @include hd {
                     font-size: 3.125rem;
                     line-height: 1.1;
                     margin-bottom: .5rem;
@@ -184,6 +235,15 @@ header {
                     line-height: 1.1;
                     margin-bottom: .5rem;
                     width: 60%;
+                }
+
+                @include desktop {
+                    width: 100%;
+                }
+
+                @include hd {
+                    width: 60%;
+
                 }
             }
 
