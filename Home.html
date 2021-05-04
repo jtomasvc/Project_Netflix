@@ -35,11 +35,12 @@
             </div>
 
            <div class="campo">
-                <input class="absolute" 
-       type="password" 
-                id="password" name="password">
-                <label class="relative" 
-                for="password">Buscar...</label> 
+                <button class="boton-buscar" onclick="myFunction()">
+                    <i class="fas fa-search fa-2x"></i>
+                </button>
+                <input id="myDIV" class="absolute" type="text" >
+                <i class="far fa-bell fa-2x campana"></i>
+                <img class="imagen-usuario" src="assets/mrincreible.webp" alt="">
            </div>
         </header>
         <div class="owl-carousel owl-theme">
@@ -56,10 +57,12 @@
 
                     <div class="modal-acciones">
                         <span class="accion-play">
-                            <button class="boton-rectangular">
-                                <i class="fas fa-play"></i> 
-                                <span>Reproducir</span>
-                            </button>
+                            <a href="#miVideo">
+                                <button class="boton-rectangular">
+                                    <i class="fas fa-play"></i> 
+                                    <span>Reproducir</span>
+                                </button>
+                            </a>
                         </span>
                         <span class="mas-acciones">
                             <a href="#miModal">
@@ -85,10 +88,12 @@
                     <p class="sinopsis">En Winden (2019), un pequeño pueblo ficticio situado en Alemania, la desaparición de un niño pone en alerta a todos los vecinos. El cuerpo de policía trata de investigar el caso sin hallar ninguna explicación.</p>
                     <div class="modal-acciones">
                         <span class="accion-play">
-                            <button class="boton-rectangular">
-                                <i class="fas fa-play"></i> 
-                                <span>Reproducir</span>
-                            </button>
+                            <a href="#miVideo">
+                                <button class="boton-rectangular">
+                                    <i class="fas fa-play"></i> 
+                                    <span>Reproducir</span>
+                                </button>
+                            </a>
                         </span>
                         <span class="mas-acciones">
                             <a href="#miModal">
@@ -111,10 +116,12 @@
                     <p class="sinopsis">Tras cumplir 50 años, Walter White (Bryan Cranston), un profesor de química de un instituto de Albuquerque, Nuevo México, se entera de que tiene un cáncer de pulmón incurable. la brutal noticia lo impulsa a dar un drástico cambio a su vida: decide, fabricar anfetaminas y ponerlas a la venta.</p>
                     <div class="modal-acciones">
                         <span class="accion-play">
-                            <button class="boton-rectangular">
-                                <i class="fas fa-play"></i> 
-                                <span>Reproducir</span>
-                            </button>
+                            <a href="#miVideo">
+                                <button class="boton-rectangular">
+                                    <i class="fas fa-play"></i> 
+                                    <span>Reproducir</span>
+                                </button>
+                            </a>
                         </span>
                         <span class="mas-acciones">
                             <a href="#miModal">
@@ -130,7 +137,6 @@
         </div>
         
         <div class="popular">
-
             <h2>Popular en Netflix</h2>
             <div class="multiple-items">
                 <div class="item-carousel">
@@ -152,19 +158,17 @@
                                 </li>
                             </ul>
                             
-                            <a href="#miModal">
+                            <a href="#miModal"> 
                                 <button class="boton-mas">
-                                    <i  class="fas fa-chevron-down fa-2x"></i>
+                                    <i class="fas fa-chevron-down fa-2x"></i>
                                 </button>
                             </a>
-
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
                             <span class="clasificacion">TV-MA</span>
                             <span class="tiempo">50min</span>
                         </p>
-
                         <p class="tipo">
                             <span class="drama">Drama</span>
                             <span class="drama">suspenso</span>
@@ -190,9 +194,12 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+
+                            <a href="#miModal"> 
+                                <button class="boton-mas">
+                                    <i class="fas fa-chevron-down fa-2x"></i>
+                                </button>
+                            </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -224,9 +231,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                           <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -292,9 +301,12 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+
+                            <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -326,9 +338,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                           <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -343,7 +357,9 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        
+        <div class="popular">
             <h2>Continuar Viendo</h2>
             <div class="multiple-items">
                 <div class="item-carousel">
@@ -364,9 +380,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                            <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -432,9 +450,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                           <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -466,9 +486,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                           <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -551,9 +573,10 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="popular">
             <h2>peliculas agregadas recientemente</h2>
-
             <div class="multiple-items">
                 <div class="item-carousel">
                     <img class="tamano-secundario" src="assets/bastardos.jpg" alt="">
@@ -573,9 +596,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                           <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -607,9 +632,13 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+
+                            <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
+
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -641,9 +670,11 @@
                                     <i class="fas fa-thumbs-down fa-2x"></i>
                                 </li>
                             </ul>
-                            <button class="boton-mas">
-                                <i class="fas fa-chevron-down fa-2x"></i>
-                            </button>
+                           <a href="#miModal"> 
+                               <button class="boton-mas">
+                                   <i class="fas fa-chevron-down fa-2x"></i>
+                               </button>
+                           </a>
                         </div>
                         <p class="detalle-info">
                             <span class="para-ti">96% para ti</span>
@@ -808,14 +839,23 @@
                          </div>
 
                          <div>
-                             <button class="temporadas">
+                             <button class="temporadas" onclick="temporadas()">
                                  <p>Temporadas</p>
                                  <i class="fas fa-sort-down"></i>
                              </button>
+
+                             <div class="menu-temporadas" id="temporada">
+                                 <ul class="lista-temporadas">
+                                     <li onclick="temporada1()">Temporada 1</li>
+                                     <li onclick="temporada2()">Temporada 2</li>
+                                     <li onclick="temporada3()">Temporada 3</li>
+                                     <li onclick="temporada4()">Temporada 4</li>
+                                 </ul>
+                             </div>
                          </div>
                      </div>
-
-                     <div>
+                     
+                    <div id="temporada1" class="temporada1">
                         <div class="episodios">
                             <span class="numero-episodio">1</span>
                             <div class="imagen-episodio">
@@ -907,6 +947,298 @@
                             </div>
                         </div>
                      </div>
+
+                     
+                    <div id="temporada2" class="temporada2">
+                        <div class="episodios">
+                            <span class="numero-episodio">1</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/jhonwick.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Otro Inicio</h2>
+                                    <span>43 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">2</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/jhonwick.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Ahora si es</h2>
+                                    <span>45 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">3</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/jhonwick.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>La revelacion</h2>
+                                    <span>40 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">4</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/jhonwick.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>El descubrimiento</h2>
+                                    <span>50 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">5</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/jhonwick.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>El final final</h2>
+                                    <span>55 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="temporada3" class="temporada3">
+                        <div class="episodios">
+                            <span class="numero-episodio">1</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/brooklyn.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Por que</h2>
+                                    <span>43 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">2</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/brooklyn.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Ozzymandias</h2>
+                                    <span>45 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">3</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/brooklyn.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Morfeo</h2>
+                                    <span>40 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">4</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/brooklyn.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Familia</h2>
+                                    <span>50 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">5</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/brooklyn.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Como continuara</h2>
+                                    <span>55 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                     </div>
+
+                    <div id="temporada4" class="temporada4">
+                        <div class="episodios">
+                            <span class="numero-episodio">1</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/fucking-world.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Otro Inicio</h2>
+                                    <span>43 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">2</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/fucking-world.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>Piloto</h2>
+                                    <span>45 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">3</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/fucking-world.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>El pacto</h2>
+                                    <span>40 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">4</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/fucking-world.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>El dia de la diversidad</h2>
+                                    <span>50 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="episodios">
+                            <span class="numero-episodio">5</span>
+                            <div class="imagen-episodio">
+                                <img class="imagen-temporadas" src="assets/fucking-world.jpg" alt="">
+                            </div>
+                            <div class="datos-episodio">
+                                <div class="titulo-episodio">
+                                    <h2>La pelea</h2>
+                                    <span>55 minutos</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Qui reprehenderit incidunt laboriosam, ex, eum 
+                                porro praesentium explicabo corrupti provident 
+                                accusantium, perferendis dicta eos quidem consequatur 
+                                quam laborum consequuntur aspernatur sed!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+
+        <div id="miVideo" class="modalVideo">
+            <div class="modal-contenidoVideo">
+                <div class="contenido-imagenVideo">
+                    <a href="#" class="close"><i class="far fa-times-circle fa-2x"></i><span class="volver">Volver al explorador</span></a>
+                    <video class="tamanoVideo" controls>
+                        <source src="assets/breakingbad.mp4" > 
+                    </video>
                 </div>
             </div>
         </div>
@@ -1002,6 +1334,61 @@
 	});
 
 });
+    </script>
+
+    <script>
+       function myFunction() {
+           var search = document.getElementById("myDIV");
+           if (search.style.display === "none") {
+               search.style.display = "block";
+           } else {
+               search.style.display = "none";
+           }
+       }
+    </script>
+
+    <script>
+        function temporadas() {
+            var temporada = document.getElementById("temporada");
+            if (temporada.style.display === "none") {
+                temporada.style.display = "block";
+            } else {
+                temporada.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        function temporada2() {
+            var temporada2 = document.getElementById("temporada2");
+            if (temporada2.style.display === "none") {
+                temporada2.style.display = "block";
+            } else {
+                temporada2.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        function temporada3() {
+            var temporada3 = document.getElementById("temporada3");
+            if (temporada3.style.display === "block") {
+                temporada3.style.display = "block";
+            } else {
+                temporada3.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        function temporada4() {
+            var temporada4 = document.getElementById("temporada4");
+            if (temporada4.style.display === "block") {
+                temporada4.style.display = "block";
+            } else {
+                temporada4.style.display = "block";
+            }
+        }
     </script>
 </body>
 </html>

@@ -118,7 +118,32 @@
 }
 
 .home .header-home .campo {
+  display: flex;
   margin-right: 0;
+}
+
+.home .header-home .campo .boton-buscar {
+  margin-left: 18%;
+  position: absolute;
+  margin-top: 16px;
+  background: unset;
+  border: navajowhite;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.home .header-home .imagen-usuario {
+  margin-top: 10px;
+  width: 7%;
+  margin-left: 76%;
+  border-radius: 8px;
+}
+
+.home .header-home .campana {
+  margin-top: 18px;
+  position: absolute;
+  margin-left: 404px;
 }
 
 @media (min-width: 480px) {
@@ -130,7 +155,7 @@
     align-items: center;
     position: relative;
     z-index: 2;
-    transition: all 1s;
+    transition: all 2s;
   }
 }
 
@@ -142,7 +167,8 @@
     background-color: transparent;
   }
   .home .header-home .campo {
-    margin-right: 200px;
+    margin-right: 0px;
+    display: flex;
   }
 }
 
@@ -230,6 +256,16 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .absolute {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 13px;
+    transition: all .5s ease;
+    display: none;
+  }
+}
+
 .relative {
   position: relative;
   color: #757575;
@@ -246,15 +282,29 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .relative {
+    margin-left: 70%;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .popular {
   margin-left: 1rem;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.multiple-items {
+  max-height: 220px;
+  position: relative;
 }
 
 .item-carousel {
   margin-right: 4px;
   transform: scale(1);
-  transition: all .45s;
+  transition: all 1.5s;
   position: relative;
 }
 
@@ -262,6 +312,7 @@
   padding: 1rem;
   box-shadow: 0 2px 2px #000;
   display: none;
+  background-color: #141414;
 }
 
 .item-carousel .hover .contenido-hover {
@@ -281,8 +332,15 @@
   cursor: pointer;
 }
 
+.item-carousel .hover .contenido-hover .detalle-info {
+  margin-top: 40px;
+}
+
 .item-carousel .hover .contenido-hover .boton-mas {
   cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
 }
 
 .item-carousel .hover .para-ti {
@@ -308,16 +366,20 @@
 }
 
 .item-carousel:hover {
+  z-index: 999;
+}
+
+.item-carousel:hover {
   transform: scale(1);
   position: relative;
-  z-index: 2;
+  z-index: 999;
 }
 
 @media (min-width: 480px) {
   .item-carousel:hover {
     transform: scale(1.2);
     position: relative;
-    z-index: 2;
+    z-index: 999;
   }
 }
 
@@ -337,6 +399,8 @@
   .item-carousel:hover .hover {
     display: block;
     transform: scale(1);
+    position: relative;
+    z-index: 999;
   }
 }
 
@@ -564,7 +628,62 @@ footer p {
   overflow-y: auto;
 }
 
+.modalVideo {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+  overflow-y: auto;
+}
+
+.modal-contenidoVideo {
+  background-color: #181818;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.modal-contenidoVideo .contenido-imagenVideo {
+  position: relative;
+  display: inline-block;
+}
+
+.modal-contenidoVideo .contenido-imagenVideo .close {
+  position: absolute;
+  margin: 1rem 1rem;
+  z-index: 5;
+}
+
+.modal-contenidoVideo .contenido-imagenVideo .tamanoVideo {
+  width: 148.5%;
+  height: 99vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.modal-contenidoVideo .contenido-imagenVideo .volver {
+  font-size: 20px;
+  color: white;
+  margin-left: 1rem;
+}
+
+.modal-contenidoVideo .contenido-imagenVideo .fa-times-circle {
+  color: white;
+}
+
 #miModal:target {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 3;
+}
+
+#miVideo:target {
   opacity: 1;
   pointer-events: auto;
   z-index: 3;
@@ -591,6 +710,7 @@ footer p {
   border-radius: 4px;
   background-color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .modal-acciones .boton-rectangular .fa-play {
@@ -648,6 +768,7 @@ footer p {
   font-size: 22px;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
 }
 
 .detalle-episodio .temporadas p {
@@ -670,6 +791,10 @@ footer p {
 
 .episodios .imagen-episodio {
   padding: 1rem;
+}
+
+.episodios .imagen-episodio .imagen-temporadas {
+  width: 200px;
 }
 
 .episodios .datos-episodio {
@@ -829,6 +954,85 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: unset;
+}
+
+.hovercito {
+  display: flex;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s;
+  /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.contenidoo {
+  display: none;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 999;
+}
+
+.zoom:hover .contenidoo {
+  display: block;
+  background-color: black;
+}
+
+.menu-temporadas {
+  position: absolute;
+  display: none;
+  background-color: #181818;
+  border: .1em solid #4d4d4d;
+  width: 16%;
+  z-index: 999;
+}
+
+.menu-temporadas ul {
+  padding: 0;
+}
+
+.menu-temporadas ul li {
+  list-style: none;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-temporadas ul li:hover {
+  background-color: #4d4d4d;
+}
+
+.temporada2 {
+  display: none;
+  position: absolute;
+  top: 862px;
+  background: #181818;
+  width: 93%;
+}
+
+.temporada3 {
+  display: none;
+  position: absolute;
+  top: 862px;
+  background: #181818;
+  width: 93%;
+}
+
+.temporada4 {
+  display: none;
+  position: absolute;
+  top: 862px;
+  background: #181818;
+  width: 93%;
 }
 
 .otro-background {
